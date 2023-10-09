@@ -15,9 +15,9 @@ factory MovieModel.fromJson(Map<String, dynamic>json)=>MovieModel(
     title: json["title"],
     backdropPath: json["backdrop_path"],
     // that is because gender id is list
-    genderId:List<int>.from(json["gener_id"].map((e) => e)),
+    genderId:List<int>.from(json["genre_ids"].map((e) => e)),
     overview:json["overview"] ,
-    voteAverage: json["vote_average"],
+    voteAverage: json["vote_average"].toDouble(),
     releaseDate: json["release_date"],
 );
 
