@@ -2,12 +2,12 @@
 
 class RecommendationModel  extends Recommendation{
  const RecommendationModel({
-   required super.backdrobPath,
+    super.backdrobPath,
    required super.id, });
 
  factory RecommendationModel.fromJson(Map<String, dynamic>json)=>RecommendationModel(
      id: json["id"],
-     backdrobPath:json["backdrop_path"],
+     backdrobPath:json["backdrop_path"] ?? '/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg',
 
  );
  }

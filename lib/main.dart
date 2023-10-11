@@ -13,9 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: Colors.grey.shade900,
+      ),
       debugShowCheckedModeBanner: false,
-        home: MainMoviesScreen()
+        home: const MainMoviesScreen()
     );
   }
 }
