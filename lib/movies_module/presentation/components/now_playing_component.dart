@@ -7,6 +7,7 @@ import 'package:movies_app/core/uitiles/enums.dart';
 import 'package:movies_app/movies_module/presentation/controller/movies_bloc.dart';
 import 'package:movies_app/movies_module/presentation/controller/movies_state.dart';
 import '../../../core/uitiles/constants.dart';
+import '../screens/movie_detail_screen.dart';
 
 class NowPlayingComponents extends StatelessWidget {
   const NowPlayingComponents({Key? key}) : super(key: key);
@@ -36,8 +37,10 @@ class NowPlayingComponents extends StatelessWidget {
                       return GestureDetector(
                         key: const Key('openMovieMinimalDetail'),
                         onTap: () {
-                          /// TODO : NAVIGATE TO MOVIE DETAILS
-                        },
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (BuildContext context){
+                                return MovieDetailScreen(id: item.id);
+                              }));                        },
                         child: Stack(
                           children: [
                             ShaderMask(

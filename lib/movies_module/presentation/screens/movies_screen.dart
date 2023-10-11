@@ -6,7 +6,6 @@ import 'package:movies_app/movies_module/presentation/components/popular_compone
 import 'package:movies_app/movies_module/presentation/components/top_rated_component.dart';
 import 'package:movies_app/movies_module/presentation/controller/movies_bloc.dart';
 import 'package:movies_app/movies_module/presentation/controller/movies_event.dart';
-
 import '../../../core/services/service_locator.dart';
 
 class MainMoviesScreen extends StatelessWidget {
@@ -43,7 +42,7 @@ class MainMoviesScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      /// TODO : NAVIGATION TO POPULAR SCREEN
+
                     },
                     child: const Padding(
                       padding: EdgeInsets.all(8.0),
