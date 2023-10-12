@@ -18,6 +18,7 @@ class MovieDetailsBloc extends Bloc<MovieDetailsEvent, MovieDetailsState> {
   }
   final GetMovieDetailsUseCase getMovieDetailsUseCase;
   final GetRecommendationUseCase getRecommendationUseCase;
+
   FutureOr<void> _getMovieDetails(
       GetMovieDetailsEvent event, Emitter<MovieDetailsState> emit) async {
     final result =

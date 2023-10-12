@@ -30,7 +30,7 @@ class MovieDetailsState extends Equatable {
       recommendationmessage:
           recommendationmessage ?? this.recommendationmessage,
       recommendationState: recommendationState ?? this.recommendationState,
-      movieDetails: movieDetails ?? this.movieDetails,
+       movieDetails: movieDetails ?? this.movieDetails,
       movieRequestState: movieRequestState ?? this.movieRequestState,
       message: message ?? this.message,
     );

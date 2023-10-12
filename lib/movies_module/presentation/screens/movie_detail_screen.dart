@@ -41,8 +41,8 @@ class MovieDetailContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<MovieDetailsBloc, MovieDetailsState>(
         builder: (BuildContext context, state) {
-          if(state==null){
-            return CircularProgressIndicator();
+          if(state.movieDetails==null){
+            return Center(child: CircularProgressIndicator());
 
           }else {
             print(state);
@@ -78,7 +78,7 @@ class MovieDetailContent extends StatelessWidget {
                               .size
                               .width,
                           imageUrl: AppConstant.imageUrl(
-                              state.movieDetails!.backDropPath),
+                              state.movieDetails!.backDropPath!),
                           fit: BoxFit.cover,
                         ),
                       ),
