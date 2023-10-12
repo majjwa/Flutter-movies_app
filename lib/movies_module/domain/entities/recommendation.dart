@@ -5,11 +5,10 @@ class Recommendation extends Equatable{
   final int id;
 
   const Recommendation({
-       this.backdrobPath,
+          this.backdrobPath,
           required this.id,
   });
 
   @override
-  // TODO: implement props
   List<Object?> get props => [backdrobPath,id];
 }
