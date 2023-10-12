@@ -4,7 +4,7 @@ import 'package:movies_app/movies_module/domain/entities/movie_details.dart';
 class MovieDetailsModel  extends MovieDetails{
   const MovieDetailsModel({
     required super.generes,
-    required super.backDropPath,
+     super.backDropPath,
     required super.id,
     required super.overView,
     required super.realeaseDate,
@@ -16,7 +16,7 @@ class MovieDetailsModel  extends MovieDetails{
       generes: List<GeneresModel>.from(json["genres"].map((x)=>GeneresModel.fromJson(x))),
       backDropPath: json["backdrop_path"],
       id: json["id"],
-      overView:json["overview"] ,
+       overView:json["overview"] ,
       realeaseDate:  json["release_date"],
       title: json["title"],
       runTime: json["runtime"],

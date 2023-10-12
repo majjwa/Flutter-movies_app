@@ -10,7 +10,7 @@ class AppConstant{
   static String movieDeatils( int movieId)=>
       "$baseUrl/movie/$movieId?api_key=$apiKey";
   static String recommendation( int movieId)=>
-      "$baseUrl/movie/$movieId/recommedations/?api_key=$apiKey";
+      "$baseUrl/movie/$movieId/recommendations?api_key=$apiKey";
    static String imageUrl(String path)=> '$baseImageUrl$path';
 
 
